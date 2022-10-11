@@ -8,5 +8,4 @@
   "scripts": {
     "test": "jest"
   }
-
-  }
+}

@@ -1,0 +1,19 @@
+* {
+    margin: .5rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.box {
+    border: 2px solid blue;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: tan;
+}
+
