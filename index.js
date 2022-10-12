@@ -37,10 +37,9 @@ const init = () => {
 
 const askManagerQuestions = () => {
     inquirer.prompt(managerQuestions)
-    .then(( answers ) => {
+    .then((answers) => {
         answers = new Manager(answers.name, answers.id, answers.email, answers.officeNumber)
         employeeObjects.push(answers);
-        console.log(employeeObjects)
         return chooseEmployee();
     })
 }
