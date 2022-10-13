@@ -13,7 +13,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background: tan;
+    flex-direction: column;
 }
 
+.card {
+    width: 30%;
+}
+
+.top-header {
+    background-color: aliceblue;
+}
+
+.manager-card {
+    width: 50%;
+}

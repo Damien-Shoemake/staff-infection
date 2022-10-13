@@ -34,13 +34,16 @@
       </head>
       <body>
         <header class= "container">
-          <div class= "flex box justify-center my-team">
+          <div class= "flex box justify-center top-header">
             <h1>Generated Team</h1>
           </div>
         </header>
         <main class= "container">
         ${employeesHtml(data)}
         </main>
+        <footer>
+          Made by: Damien Shoemake
+        </footer>
       </body>
     </html>
   `
@@ -50,7 +53,7 @@
 const managerHtml = managerData => {
 
   return `
-     <div class="card">
+     <div class="card manager-card">
      <h5 class="card-header">${managerData.getName()}, Employee ID: ${managerData.getId()}</h5>
      <div class="card-body">
        <h5 class="card-title">${managerData.getRole()} located in office ${managerData.getOfficeNumber()}</h5>
@@ -68,7 +71,7 @@ const engineerHtml = engineerData => {
      <div class="card-body">
        <h5 class="card-title">${engineerData.getRole()} </h5>
        <p class="card-text">Probably debugging code as you're reading this.</p>
-       <a href="github.com/${engineerData.getGithub()}" target="_blank" class="btn btn-secondary">Github Page</a>
+       <a href="https://github.com/${engineerData.getGithub()}" target="_blank" class="btn btn-secondary">Github Page</a>
      </div>
    </div>`
 }
@@ -81,7 +84,7 @@ const internHtml = internData => {
   <div class="card-header">${internData.getName()}, Employee ID: ${internData.getId()}</div>
   <div class="card-body">
   <h5 class="card-title">${internData.getRole()} from ${internData.getSchool()}</h5>
-  <p class="card-text">Working hard to become a full stack enginner some day!</p>
+  <p class="card-text">Working hard to become a full stack engineer some day!</p>
   </div>
   </div> `
 }
